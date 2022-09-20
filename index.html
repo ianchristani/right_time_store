@@ -48,7 +48,6 @@
             </div>
         </div>
     </nav>
-
     <!-- CAROUSEL -->
     <div class="container">
         <div id="carouselExampleCaptions" class="carousel slide" data-bs-ride="false">
@@ -83,41 +82,41 @@
         </div>
     </div>    
     <!-- CARDS -->
-    <div class="container-fluid">
+    <div class="container">
         <div class="row justify-content-center align-items-center">
-            <div class="col me-1 ms-1">
-                <div class="card float" id="cards-start">
-                    <img src="media/relogio1.png" alt="" class="card-img-top">
+            <div class="col">
+                <div class="card-fluid" id="cards-start">
                     <h3 class="card-title">New Collection</h3>
-                    <a href="#" class="card-link">Buy</a>
+                    <img src="media/relogio1.png" alt="" class="card-img-top">
+                    <p><a href="#" class="card-link mb-3">Buy Now</a></p>   
                 </div>
             </div>
             <div class="col me-1 ms-1">
-                <div class="card float" id="cards-center">
-                    <img src="media/relogio2.png" alt="" class="card-img-top">
+                <div class="card-fluid" id="cards-center">
                     <h3 class="card-title">Promotion</h3>
-                    <a href="#" class="card-link">Buy</a>
+                    <img src="media/relogio2.png" alt="" class="card-img-top">
+                    <p><a href="#" class="card-link mb-3">Buy Now</a></p>
                 </div>
             </div>
-            <div class="col me-1 ms-1">
-                <div class="card float" id="cards-end">
-                    <img src="media/relogio3.png" alt="" class="card-img-top">
+            <div class="col">
+                <div class="card-fluid" id="cards-end">
                     <h3 class="card-title">Limited Ediction</h3>
-                    <a href="#" class="card-link">Buy</a>
+                    <img src="media/relogio3.png" alt="" class="card-img-top">
+                    <p><a href="#" class="card-link mb-3">Buy Now</a></p>                    
                 </div>
             </div>
         </div>
     </div>
     <!-- BEST SELLERS CARDS -->
-    <div class="container-fluid mt-5">
+    <div class="container mt-5">
         <div class="row justify-content-start ps-3">
             <div class="col">
                 <h3 id="bestsellerstitle">BEST SELLERS</h3>
             </div>            
         </div>        
         <div class="row justify-content-center align-items-center p-3" id="bestSellers">
-            <div class="col ">
-                <div class="card float p-3">
+            <div class="col">
+                <div class="card-fluid p-3">
                     <img src="media/relogio1.png" alt="" class="card-img-top">
                     <h5 class="card-title mt-2">Hampden Dark</h5>
                     <p class="card-body">$ 200</p>
@@ -126,7 +125,7 @@
                 
             </div>
             <div class="col">
-                <div class="card float p-3">
+                <div class="card-fluid p-3">
                     <img src="media/relogio4.png" alt="" class="card-img-top">
                     <h5 class="card-title mt-2">BombFrog Steel Magna</h5>
                     <p class="card-body">$ 200</p>
@@ -134,7 +133,7 @@
                 </div>
             </div>
             <div class="col">
-                <div class="card float p-3">
+                <div class="card-fluid p-3">
                     <img src="media/relogio5.png" alt="" class="card-img-top">
                     <h5 class="card-title mt-2">Timex Indiglo</h5>
                     <p class="card-body">$ 200</p>
@@ -142,7 +141,7 @@
                 </div>
             </div>
             <div class="col">
-                <div class="card float p-3">
+                <div class="card-fluid p-3">
                     <img src="media/relogio6.png" alt="" class="card-img-top">
                     <h5 class="card-title mt-2">Thirteen.02</h5>
                     <p class="card-body">$ 200</p>
@@ -153,14 +152,14 @@
     </div>
     <!-- PROMOTION WATCH CARD -->
     <div class="container-fluid mt-4 mb-5">
-        <div class="row align-items-center justify-content-center m-4" id="promotion">
+        <div class="row align-items-center justify-content-center" id="promotion">
             <div class="col-6 mb-4">
                 <div class="card float-center" id="promotioncard">
                     <p class="card-body">12.5% OFF</p>
                     <h2 class="card-title">Nacre</h2>
                     <p class="card-subtitle mb-2 text-muted">Give it as a gift to someone that you love.</p>
                     <p class="card-body">$ 175</p>
-                    <a href="#" class="btn btn-outline-light">Buy Now</a>
+                    <a href="#" class="btn btn-outline-light mb-4 mt-2">Buy Now</a>
                 </div>
             </div>
             <div class="col-3">
@@ -169,78 +168,134 @@
         </div>        
     </div>
     <!-- NEW ONES CARDS WITH ASIDE BAR-->
-    <div class="container-fluid mt-4 ms-3">
+    <div class="container mt-6 ms-6">
         <h2 id="new">New Ones</h2>
     </div>
-    
-    <div class="container m-4">
-        <div class="row align-items-center justify-content-center">
-            <div class="col-3">
-                <p id="thebest">The best</p>              
+    <div class="container m-6">
+        <div class="row justify-content align-items-center">
+            <div class="col-3 align-self-center" id="thebest">
+                <p>The best</p>              
                 <h3>Watches</h3>
-                <p>for the best price</p>
+                <p>for the best price</p>        
             </div>
-            <div class="col-3 mb-4">
-                <div class="card float">
-                    <img src="media/relogio7.png" alt="" class="card-img-top">
-                    <h2 class="card-title">Nacre</h2>
-                    <p class="card-body">$ 175</p>
-                    <a href="#" class="btn btn-outline-light">Buy Now</a>
+            <div class="col-9">
+                <div class="row">
+                    <div class="col-3">
+                        <div class="card-fluid">
+                            <img src="media/relogio7.png" alt="" class="card-img-top">
+                            <h2 class="card-title">Nacre</h2>
+                            <p class="card-body">$ 175</p>
+                            <a href="#" class="btn btn-outline-light mb-3">Buy Now</a>
+                        </div>
+                    </div>
+                    <div class="col-3">
+                        <div class="card-fluid">
+                            <img src="media/relogio6.png" alt="" class="card-img-top">
+                            <h2 class="card-title">Thirteen.02</h2>
+                            <p class="card-body">$ 200</p>
+                            <a href="#" class="btn btn-outline-light mb-3">Buy Now</a>
+                        </div>
+                    </div>
+                    <div class="col-3">
+                        <div class="card-fluid">
+                            <img src="media/relogio5.png" alt="" class="card-img-top">
+                            <h2 class="card-title">Timex</h2>
+                            <p class="card-body">$ 200</p>
+                            <a href="#" class="btn btn-outline-light mb-3">Buy Now</a>
+                        </div>
+                    </div>               
                 </div>
-            </div>        
-            <div class="col-3 mb-4">
-                <div class="card float">
-                    <img src="media/relogio6.png" alt="" class="card-img-top">
-                    <h2 class="card-title">Thirteen.02</h2>
-                    <p class="card-body">$ 200</p>
-                    <a href="#" class="btn btn-outline-light">Buy Now</a>
+                <div class="row">
+                    <div class="col-3">
+                        <div class="card-fluid">
+                            <img src="media/relogio4.png" alt="" class="card-img-top">
+                            <h2 class="card-title">BombFrog Steel Magna</h2>
+                            <p class="card-body">$ 200</p>
+                            <a href="#" class="btn btn-outline-light mb-3">Buy Now</a>
+                        </div>
+                    </div>
+                    <div class="col-3">
+                        <div class="card-fluid">
+                            <img src="media/relogio3.png" alt="" class="card-img-top">
+                            <h2 class="card-title">Wristology</h2>
+                            <p class="card-body">$ 200</p>
+                            <a href="#" class="btn btn-outline-light mb-3">Buy Now</a>
+                        </div>
+                    </div>
+                    <div class="col-3">
+                        <div class="card-fluid">
+                            <img src="media/relogio2.png" alt="" class="card-img-top">
+                            <h2 class="card-title">Citizen</h2>
+                            <p class="card-body">$ 200</p>
+                            <a href="#" class="btn btn-outline-light mb-3">Buy Now</a>
+                        </div>
+                    </div>                    
                 </div>
             </div>
-            <div class="col-3 mb-4">
-                <div class="card float">
-                    <img src="media/relogio5.png" alt="" class="card-img-top">
-                    <h2 class="card-title">Timex</h2>
-                    <p class="card-body">$ 200</p>
-                    <a href="#" class="btn btn-outline-light">Buy Now</a>
-                </div>
-            </div>
-
-            <div class="col-3 offset"></div>
-
-            <div class="col-3 mb-4">
-                <div class="card float">
-                    <img src="media/relogio4.png" alt="" class="card-img-top">
-                    <h2 class="card-title">BombFrog Steel Magna</h2>
-                    <p class="card-body">$ 200</p>
-                    <a href="#" class="btn btn-outline-light">Buy Now</a>
-                </div>
-            </div>
-
-            <div class="col-3 mb-4">
-                <div class="card float">
-                    <img src="media/relogio3.png" alt="" class="card-img-top">
-                    <h2 class="card-title">Wristology</h2>
-                    <p class="card-body">$ 200</p>
-                    <a href="#" class="btn btn-outline-light">Buy Now</a>
-                </div>
-            </div>
-
-            <div class="col-3 mb-4">
-                <div class="card float">
-                    <img src="media/relogio2.png" alt="" class="card-img-top">
-                    <h2 class="card-title">Citizen</h2>
-                    <p class="card-body">$ 200</p>
-                    <a href="#" class="btn btn-outline-light">Buy Now</a>
-                </div>
-            </div>
-
         </div>
     </div>
     <!-- SITE MAP FOOTER -->
+    <div class="container mt-6">
+        <div class="row justify-content-center align-items-center">
+            <div class="col">
+                <div class="card-fluid">
+                    <img src="media/insta1.jpg" alt="" class="card-img-top">
+                    <img src="media/insta2.jpg" alt="" class="card-img-top">
+                    <h2 class="card-title mt-4 mb-4">Social Medias</h2>
+                    <p class="card-body">Home</p>
+                    <p class="card-body">Categories</p>
+                    <p class="card-body">Promotions</p>
+                </div>
+            </div>
+    
+            <div class="col">
+                <div class="card-fluid">
+                    <img src="media/insta3.jpg" alt="" class="card-img-top">
+                    <img src="media/insta4.jpg" alt="" class="card-img-top">
+                    <h2 class="card-title mt-4 mb-4">Watch Time</h2>
+                    <p class="card-body">Contact us at anytime</p>
+                    <p class="card-body">E-mail</p>
+                    <p class="card-body">Customer's Service</p>
+                </div>
+            </div>
+    
+            <div class="col">
+                <div class="card-fluid">
+                    <img src="media/insta5.jpg" alt="" class="card-img-top">
+                    <img src="media/insta6.jpg" alt="" class="card-img-top">
+                    <h2 class="card-title mt-4 mb-4">Information</h2>
+                    <p class="card-body">Privacy Policy</p>
+                    <p class="card-body">Give Back Policy</p>
+                </div>
+            </div>        
+        </div>
+    </div>
+    
     <!-- NEWS LETTER SUBSCRIPTION -->
-    <!-- FOOTER -->  
-        
-
+    <div class="container-fluid mb-4 mt-4" id="newsletter">
+        <div class="row justify-content-center align-items-center">
+            <div class="col-6">
+                <form action="">
+                    <div class="mt-4">
+                        <label for="newsletter" class="form-label mb-3 mt-3">Subscribe our newsletter:</label>
+                        <input type="email" class="form-control mb-3" name="newsletter" aria-describedby="newsletter" 
+                        placeholder="your email">
+                    </div>
+                    <input type="submit" class="btn btn-outline-light mb-3" value="Submit"> 
+                </form>
+            </div>
+        </div>
+        <!-- FOOTER -->
+        <div class="row justify-content-center align-items-center mb-4 mt-3" id="socialmedia">
+            <div class="col-3">
+                <ul class="list-inline">
+                    <li class="list-inline-item"><i class="bi bi-facebook"></i></li>
+                    <li class="list-inline-item me-3 ms-3"><i class="bi bi-instagram"></i></li>
+                    <li class="list-inline-item"><i class="bi bi-youtube"></i></li>
+                </ul> 
+            </div> 
+        </div>
+    </div>
     <!-- JavaScript Bundle with Popper -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-u1OknCvxWvY5kfmNBILK2hRnQC3Pr17a+RTT6rIHI7NnikvbZlHgTPOOmMi466C8" crossorigin="anonymous"></script>
 </body>
