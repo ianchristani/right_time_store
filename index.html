@@ -16,136 +16,138 @@
 </head>
 <body>
     <!-- HEADER -->
-    <ul class="nav align-items-center justify-content-center bg-dark p-4">
+    <ul class="nav align-items-center justify-content-center bg-dark p-4" id="header">
         <li class="nav-item">
             <h1>Right Time Watches</h1>
         </li>
         <li class="nav-item" id="searchproduct">
             <div class="form d-flex">
+                <i class="bi bi-search primary-color"></i>
                 <input type="search" class="form-control" placeholder="Search your watch" aria-label="Search">
-                <button class="btn btn-outline-primary" type="submit">Search</button>
+                <button class="btn btn btn-primary" type="submit" id="buttonsubmit">Search</button>
             </div>
         </li>
         <li class="nav-item">
             <ul class="list-inline">
-                <li class="list-inline-item"><a href="#" class="bi bi-person"></a></li>
-                <li class="list-inline-item"><a href="#" class="bi bi-heart me-2 ms-2"></a></li>
-                <li class="list-inline-item"><a href="#" class="bi bi-bag"></a></li>
+                <li class="list-inline-item"><a href="" class="nav-link"><i class="bi bi-person"></i></a></li>
+                <li class="list-inline-item"><a href="" class="nav-link"><i class="bi bi-heart"></i></a><span class="qty-info">3</span></li>
+                <li class="list-inline-item"><a href="" class="nav-link"><i class="bi bi-bag"></i><b>$ 375</b></a></li>
             </ul>
         </li>
     </ul>
     <!-- TOP NAVBAR -->
-    <nav class="navbar navbar-expand-lg">
-        <div class="container-fluid" id="topnavbar">
-            <div class="collapse navbar-collapse">
-                <ul class="navbar-nav m-3">
-                    <li class="navbar-item"><a href="#" class="nav-link" aria-current="page">Home</a></li>
-                    <li class="navbar-item"><a href="#" class="nav-link" aria-current="page">Products</a></li>
-                    <li class="navbar-item"><a href="#" class="nav-link" aria-current="page">Promotions</a></li>
-                    <li class="navbar-item"><a href="#" class="nav-link" aria-current="page">Blog</a></li>
-                    <li class="navbar-item"><a href="#" class="nav-link" aria-current="page">Contact Us</a></li>
-                </ul>
-            </div>
+    <nav class="navbar navbar-expand-lg secondary-bg-color p-2" id="bottom-navbar-container">
+        <div class="container">
+            <button class="navbar-toggler"
+                type="button"
+                data-bs-toggle="collapse"
+                data-bs-target="#bottom-navbar"
+                aria-controls="bottom-navbar"
+                aria-expanded="true"
+                aria-label="Toggle navigation"
+            >
+                <i class="bi bi-list"></i>
+            </button>
+            <ul class="navbar-nav mb-2 mb-lg-0 collapse navbar-collapse" id="bottom-navbar">
+                <li class="navbar-item"><a href="#" class="nav-link" aria-current="page">Home</a></li>
+                <li class="navbar-item"><a href="#" class="nav-link" aria-current="page">Products</a></li>
+                <li class="navbar-item"><a href="#" class="nav-link" aria-current="page">Promotions</a></li>
+                <li class="navbar-item"><a href="#" class="nav-link" aria-current="page">Blog</a></li>
+                <li class="navbar-item"><a href="#" class="nav-link" aria-current="page">Contact Us</a></li>
+            </ul>
         </div>
     </nav>
     <!-- CAROUSEL -->
-    <div class="container">
-        <div id="carouselExampleCaptions" class="carousel slide" data-bs-ride="false">
-            <div class="carousel-indicators">
-                <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
-                <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1" aria-label="Slide 2"></button>
-            </div>
+    <div class="container" id="carousel-container">
+        <div class="carousel slide" data-bs-ride="carousel" id="slider">
             <div class="carousel-inner">
                 <div class="carousel-item active">
-                <img src="media/banner1.jpg" class="d-block w-100" alt="...">
-                <div class="carousel-caption d-none d-md-block">
-                    <h5>Lux Watches</h5>
-                    <p>For you to be in time in any circunstances</p>
-                </div>
+                    <img src="media/banner2.jpg" class="d-block w-100 img-fluid" alt="watch 1">
+                    <div class="carousel-caption primary-bg-color">
+                        <h5>Lux Watches</h5>
+                        <p>For you to be in time in any circunstances</p>
+                    </div>
                 </div>
                 <div class="carousel-item">
-                <img src="media/banner3.jpg" class="d-block w-100" alt="...">
-                <div class="carousel-caption d-none d-md-block">
-                    <h5>Imported Line</h5>
-                    <p>Take a look in our Swiss Line</p>
-                </div>
+                    <img src="media/banner3.jpg" class="d-block w-100 img-fluid" alt="watch 2">
+                    <div class="carousel-caption primary-bg-color">
+                        <h5>Imported Line</h5>
+                        <p>Take a look in our Swiss Line</p>
+                    </div>
                 </div>
             </div>
-            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="prev">
+            <button class="carousel-control-prev" type="button" data-bs-target="#slider" data-bs-slide="prev">
                 <span class="carousel-control-prev-icon" aria-hidden="true"></span>
                 <span class="visually-hidden">Previous</span>
             </button>
-            <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="next">
+            <button class="carousel-control-next" type="button" data-bs-target="#slider" data-bs-slide="next">
                 <span class="carousel-control-next-icon" aria-hidden="true"></span>
                 <span class="visually-hidden">Next</span>
             </button>
         </div>
     </div>    
-    <!-- CARDS -->
-    <div class="container">
-        <div class="row justify-content-center align-items-center">
-            <div class="col">
-                <div class="card-fluid" id="cards-start">
-                    <h3 class="card-title">New Collection</h3>
-                    <img src="media/relogio1.png" alt="" class="card-img-top">
-                    <p><a href="#" class="card-link mb-3">Buy Now</a></p>   
-                </div>
+    <!-- BANNERS -->
+    <div class="container" id="mini-banners">
+        <div class="row justify-content-around">
+            <div class="col-12 dark-bg-color" id="mini-banner-1">
+                <h3>New Collection</h3>
+                <img src="media/relogio1.png" alt="watch 1">
+                <a href="#" class="card-link mb-3">Buy Now</a>
             </div>
-            <div class="col me-1 ms-1">
-                <div class="card-fluid" id="cards-center">
-                    <h3 class="card-title">Promotion</h3>
-                    <img src="media/relogio2.png" alt="" class="card-img-top">
-                    <p><a href="#" class="card-link mb-3">Buy Now</a></p>
-                </div>
+            <div class="col-12 secondary-bg-color" id="mini-banner-2">
+                <h3>Promotion</h3>
+                <img src="media/relogio2.png" alt="watch 2">
+                <a href="#" class="card-link mb-3">Buy Now</a>
             </div>
-            <div class="col">
-                <div class="card-fluid" id="cards-end">
-                    <h3 class="card-title">Limited Ediction</h3>
-                    <img src="media/relogio3.png" alt="" class="card-img-top">
-                    <p><a href="#" class="card-link mb-3">Buy Now</a></p>                    
-                </div>
+            <div class="col-12 light-bg-color" id="mini-banner-3">
+                <h3>Limited Ediction</h3>
+                <img src="media/relogio3.png" alt="watch 3">
+                <a href="#" class="card-link mb-3">Buy Now</a>                   
             </div>
         </div>
     </div>
-    <!-- BEST SELLERS CARDS -->
-    <div class="container mt-5">
-        <div class="row justify-content-start ps-3">
-            <div class="col">
-                <h3 id="bestsellerstitle">BEST SELLERS</h3>
-            </div>            
-        </div>        
-        <div class="row justify-content-center align-items-center p-3" id="bestSellers">
-            <div class="col">
-                <div class="card-fluid p-3">
-                    <img src="media/relogio1.png" alt="" class="card-img-top">
-                    <h5 class="card-title mt-2">Hampden Dark</h5>
-                    <p class="card-body">$ 200</p>
-                    <a href="#" class="btn btn-outline-light btn-sm">Buy Now</a>
-                </div>
-                
-            </div>
-            <div class="col">
-                <div class="card-fluid p-3">
-                    <img src="media/relogio4.png" alt="" class="card-img-top">
-                    <h5 class="card-title mt-2">BombFrog Steel Magna</h5>
-                    <p class="card-body">$ 200</p>
-                    <a href="#" class="btn btn-outline-light btn-sm">Buy Now</a>
+    <!-- BEST SELLERS -->
+    <div class="container mt-4" id="bestSellers">
+        <h2 class="title primary-color">Best Sellers</h2>
+        <div class="row">
+            <div class="col-12 col-md-3">
+                <div class="card primary-bg-color">
+                    <div class="card-body">
+                        <img src="media/relogio1.png" alt="watch 1" class="card-img-top img-fluid">
+                        <h5 class="card-title">Hampden Dark</h5>
+                        <p class="card-text primary-color">$ 200</p>
+                        <a href="#" class="btn btn-primary">Buy Now</a> 
+                    </div>
                 </div>
             </div>
-            <div class="col">
-                <div class="card-fluid p-3">
-                    <img src="media/relogio5.png" alt="" class="card-img-top">
-                    <h5 class="card-title mt-2">Timex Indiglo</h5>
-                    <p class="card-body">$ 200</p>
-                    <a href="#" class="btn btn-outline-light btn-sm">Buy Now</a>
+            <div class="col-12 col-md-3">                      
+                <div class="card primary-bg-color">
+                    <div class="card-body">
+                        <img src="media/relogio4.png" alt="watch 2" class="card-img-top img-fluid">
+                        <h5 class="card-title">BombFrog Steel Magna</h5>
+                        <p class="card-text primary-color">$ 200</p>
+                        <a href="#" class="btn btn-primary">Buy Now</a>
+                    </div>
                 </div>
             </div>
-            <div class="col">
-                <div class="card-fluid p-3">
-                    <img src="media/relogio6.png" alt="" class="card-img-top">
-                    <h5 class="card-title mt-2">Thirteen.02</h5>
-                    <p class="card-body">$ 200</p>
-                    <a href="#" class="btn btn-outline-light btn-sm">Buy Now</a>
+            <div class="col-12 col-md-3">
+                <div class="card primary-bg-color">
+                    <div class="card-body">
+                        <img src="media/relogio5.png" alt="watch 3" class="card-img-top img-fluid">
+                        <h5 class="card-title">Timex Indiglo</h5>
+                        <p class="card-text primary-color">$ 200</p>
+                        <a href="#" class="btn btn-primary">Buy Now</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-12 col-md-3">
+                <div class="card primary-bg-color">
+                    <div class="card-body">
+                        <img src="media/relogio6.png" alt="watch 4" class="card-img-top img-fluid">
+                        <h5 class="card-title">Thirteen.02</h5>
+                        <p class="card-text primary-color">$ 200</p>
+                        <a href="#" class="btn btn-primary">Buy Now</a>
+                    </div>                    
                 </div>
             </div>
         </div>
@@ -169,66 +171,68 @@
     </div>
     <!-- NEW ONES CARDS WITH ASIDE BAR-->
     <div class="container mt-6 ms-6">
-        <h2 id="new">New Ones</h2>
+        <h2 id="new">Coming Up</h2>
     </div>
     <div class="container m-6">
-        <div class="row justify-content align-items-center">
+        <div class="row">
             <div class="col-3 align-self-center" id="thebest">
                 <p>The best</p>              
                 <h3>Watches</h3>
                 <p>for the best price</p>        
             </div>
             <div class="col-9">
-                <div class="row">
+                <div class="row justify-content-around mt-5">
                     <div class="col-3">
-                        <div class="card-fluid">
-                            <img src="media/relogio7.png" alt="" class="card-img-top">
-                            <h2 class="card-title">Nacre</h2>
-                            <p class="card-body">$ 175</p>
-                            <a href="#" class="btn btn-outline-light mb-3">Buy Now</a>
-                        </div>
+                        <div class="card-primary-bg-color">
+                            <div class="card-body">
+                                <img src="media/relogio7.png" alt="" class="card-img-top">
+                                <h2 class="card-title">Nacre</h2>
+                                <p class="card-text primary-color">$ 175</p>
+                                <a href="#" class="btn btn-outline-light mb-5">Buy Now</a>
+                            </div>
+                        </div>                        
                     </div>
                     <div class="col-3">
-                        <div class="card-fluid">
-                            <img src="media/relogio6.png" alt="" class="card-img-top">
-                            <h2 class="card-title">Thirteen.02</h2>
-                            <p class="card-body">$ 200</p>
-                            <a href="#" class="btn btn-outline-light mb-3">Buy Now</a>
-                        </div>
+                        <div class="card-primary-bg-color">
+                            <div class="card-body">
+                                <img src="media/relogio6.png" alt="" class="card-img-top">
+                                <h2 class="card-title">Thirteen.02</h2>
+                                <p class="card-text primary-color">$ 200</p>
+                                <a href="#" class="btn btn-outline-light mb-5">Buy Now</a>
+                            </div>
+                        </div>                        
                     </div>
                     <div class="col-3">
-                        <div class="card-fluid">
-                            <img src="media/relogio5.png" alt="" class="card-img-top">
-                            <h2 class="card-title">Timex</h2>
-                            <p class="card-body">$ 200</p>
-                            <a href="#" class="btn btn-outline-light mb-3">Buy Now</a>
-                        </div>
+                        <div class="card-primary-bg-color">
+                            <div class="card-body">
+                                <img src="media/relogio5.png" alt="" class="card-img-top">
+                                <h2 class="card-title">Timex</h2>
+                                <p class="card-text primary-color">$ 200</p>
+                                <a href="#" class="btn btn-outline-light mb-5">Buy Now</a>
+                            </div>
+                        </div>                        
                     </div>               
                 </div>
-                <div class="row">
+                <div class="row justify-content-around">
                     <div class="col-3">
-                        <div class="card-fluid">
-                            <img src="media/relogio4.png" alt="" class="card-img-top">
-                            <h2 class="card-title">BombFrog Steel Magna</h2>
-                            <p class="card-body">$ 200</p>
-                            <a href="#" class="btn btn-outline-light mb-3">Buy Now</a>
-                        </div>
+                        <div class="card-primary-bg-color">
+                            <div class="card-body">
+                                <img src="media/relogio3.png" alt="" class="card-img-top">
+                                <h2 class="card-title">Wristology</h2>
+                                <p class="card-text primary-color">$ 200</p>
+                                <a href="#" class="btn btn-outline-light mb-5">Buy Now</a>
+                            </div>
+                        </div>                        
                     </div>
                     <div class="col-3">
-                        <div class="card-fluid">
-                            <img src="media/relogio3.png" alt="" class="card-img-top">
-                            <h2 class="card-title">Wristology</h2>
-                            <p class="card-body">$ 200</p>
-                            <a href="#" class="btn btn-outline-light mb-3">Buy Now</a>
-                        </div>
-                    </div>
-                    <div class="col-3">
-                        <div class="card-fluid">
-                            <img src="media/relogio2.png" alt="" class="card-img-top">
-                            <h2 class="card-title">Citizen</h2>
-                            <p class="card-body">$ 200</p>
-                            <a href="#" class="btn btn-outline-light mb-3">Buy Now</a>
-                        </div>
+                        <div class="card-primary-bg-color">
+                            <div class="card-body">
+                                <img src="media/relogio2.png" alt="" class="card-img-top">
+                                <h2 class="card-title">Citizen</h2>
+                                <p class="card-text primary-color">$ 200</p>
+                                <a href="#" class="btn btn-outline-light mb-5">Buy Now</a>
+                            </div>
+                        </div>                        
                     </div>                    
                 </div>
             </div>
