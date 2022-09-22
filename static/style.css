@@ -246,6 +246,16 @@ b{
 @media (max-width:768px){
     .title{
         text-align: left;
+        font-size: 1em;
+    }
+
+    .card-img-top.img-fluid{
+        margin: 2em auto;
+        max-width: 50px;
+    }
+
+    .card-text.primary-color{
+        font-size: 1em;
     }
 }
 
@@ -322,8 +332,18 @@ b{
     margin-right:auto;
 }
 
+@media (max-width:768px){
+    .card p, h2{
+        font-size: .5em;
+    }
 
-/* NEW ONES CARDS WITH ASIDE BAR */
+    #promotionImage{
+        max-height: 150px;
+        max-width: 120px;
+    }
+}
+
+/* Coming Up */
 #new{
     color:#c09578;  
 }
@@ -344,11 +364,13 @@ b{
     color:#fff;
 }
 
-.card-title, .card-text{
+.card-title,
+.card-text,
+.card-dark-bg-color{
     text-align:center;
 }
 
-.card-body{
+.card-dark-bg-color{
     max-height: 458px;
 }
 
@@ -363,6 +385,30 @@ b{
     max-width: 140px;
 }
 
+@media (max-width:768px){
+    #new{
+        font-size: 1em;
+    }
+
+    #thebest{
+        font-size: .7em;
+    }
+
+    .card-title{
+        font-size:.8em;
+    }
+
+    .card-body img{
+        max-height: 55px;
+        max-width: 75px;
+    }
+
+    .card-body a{
+        font-size:.8em;
+        max-height: 50px;
+        max-width: 75px;
+    }
+}
 
 /* SITE MAP FOOTER */
 .card-fluid h2{
@@ -370,28 +416,50 @@ b{
     text-align:center;
 }
 
-.card-fluid p{
+.card-dark-bg-color p{
     color:rgb(102, 101, 101);
     text-align:center;
 }
 
+.card-dark-bg-color img{
+    display:inline-block;
+    height: 178px;
+}
+
 /* NEWS LETTER SUBSCRIPTION */
-#newsletter, .form-control.mb-3{
+#newsletter{
     background-color:black;
 }
 
-.form-control.mb-3{
-    border-color:rgb(102, 101, 101);
+form{
+    text-align:center;
+    font-size:1.3rem;
+    color:#c09578;
 }
 
-form, .list-inline{
+.form-control.mb-3{
+    background-color:rgb(46, 46, 46);
+    min-width: 250px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+@media (max-width:768px){
+    .form-control.mb-3{
+        position:relative;
+        left:-40px;
+        max-width: 250px;
+    }
+}
+
+/* FOOTER */ 
+.list-inline{
     text-align:center;
     font-size:1.3rem;
     color:rgb(102, 101, 101);
 }
 
-/* FOOTER */ 
-
-.list-inline{
+.list-inline-item{
     font-size:1.5rem;
+    text-align:center;
 }
